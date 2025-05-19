@@ -1,15 +1,19 @@
 #include <stdio.h>
 
-int countTwo(int iNo) {
+int countTwo(int iNo) 
+{
     int iDigit = 0;
     int iCnt = 0; 
-    if (iNo < 0) {
+    if (iNo < 0) 
+    {
         iNo = -iNo; 
     }
 
-    while (iNo != 0) {
+    while (iNo != 0) 
+    {
         iDigit = iNo % 10;  
-        if (iDigit == 2) {
+        if (iDigit == 2) 
+        {
             iCnt++;   
         }
         iNo = iNo / 10;     
@@ -18,7 +22,8 @@ int countTwo(int iNo) {
     return iCnt;
 }
 
-int main() {
+int main() 
+{
     int iValue = 0;
     int iRet = 0;
 

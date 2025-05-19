@@ -17,7 +17,7 @@ int CountDiff(int iNo)
         if ((iDigit % 2) == 0) 
         {
             iEvenSum = iEvenSum + iDigit;
-        } 
+        }
         else 
         {
             iOddSum = iOddSum + iDigit;
@@ -28,7 +28,8 @@ int CountDiff(int iNo)
     return iEvenSum - iOddSum;
 }
 
-int main() {
+int main() 
+{
     int iValue = 0;
     int iRet = 0;
 

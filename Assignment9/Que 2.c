@@ -5,17 +5,22 @@
 
 typedef int Bool;
 
-Bool ChkZero(int iNo) {
-    if (iNo == 0) {
+Bool ChkZero(int iNo) 
+{
+    if (iNo == 0) 
+    {
         return TRUE;
     }
 
-    if (iNo < 0) {
+    if (iNo < 0) 
+    {
         iNo = -iNo;
     }
 
-    while (iNo != 0) {
-        if (iNo % 10 == 0) {
+    while (iNo != 0) 
+    {
+        if (iNo % 10 == 0) 
+        {
             return TRUE;
         }
         iNo /= 10;
@@ -24,7 +29,8 @@ Bool ChkZero(int iNo) {
     return FALSE;
 }
 
-int main() {
+int main() 
+{
     int iValue = 0;
     Bool bRet = FALSE;
 
@@ -33,9 +39,12 @@ int main() {
 
     bRet = ChkZero(iValue);
 
-    if (bRet == TRUE) {
+    if (bRet == TRUE) 
+    {
         printf("It Contains Zero\n");
-    } else {
+    }
+    else 
+     {
         printf("There Is No Zero\n");
     }
     return 0;

@@ -1,9 +1,10 @@
 #include <stdio.h>
 
-int CountOddDigits(int iNo) 
+int CountEvenDigits(int iNo) 
 { 
     int iDigit = 0;
     int iCnt = 0;
+    
     if (iNo < 0) 
     {
         iNo = -iNo;
@@ -12,7 +13,7 @@ int CountOddDigits(int iNo)
     while (iNo != 0) 
     {
         iDigit = iNo % 10;
-        if ((iDigit % 2) != 0) 
+        if ((iDigit % 2) == 0) 
         {
             iCnt++;
         }
@@ -30,8 +31,8 @@ int main()
     printf("Enter Number : ");
     scanf("%d", &iValue);
 
-    iRet = CountOddDigits(iValue);
-    printf("The count of Odd digits is: %d\n", iRet); 
+    iRet = CountEvenDigits(iValue);
+    printf("The count of even digits is: %d\n", iRet); 
 
     return 0;
 }

@@ -4,13 +4,16 @@ int Count(int iNo)
 {
     int iDigit = 0;
     int iCnt = 0;
-    if (iNo < 0) {
+    if (iNo < 0) 
+    {
         iNo = -iNo;
     }
 
-    while (iNo != 0) {
+    while (iNo != 0) 
+    {
         iDigit = iNo % 10;
-        if (iDigit <= 6) {
+        if (iDigit <= 6) 
+        {
             iCnt++;
         }
         iNo = iNo / 10;
@@ -28,7 +31,7 @@ int main()
     scanf("%d", &iValue);
 
     iRet = Count(iValue);
-    printf("The count of digits <= 6 is: %d\n", iRet); // Corrected printf
+    printf("The count of digits <= 6 is: %d\n", iRet); 
 
     return 0;
 }
