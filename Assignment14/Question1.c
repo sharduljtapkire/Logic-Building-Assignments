@@ -1,12 +1,3 @@
-//Nested Iteration
-/*
-input 4 4
-output 1   2    3   4
-       1    2   3   4
-       1    2   3   4
-       1    2   3   4
-       
-*/
 # include<stdio.h>
 
 void Pattern(int iRow , int iCol)
