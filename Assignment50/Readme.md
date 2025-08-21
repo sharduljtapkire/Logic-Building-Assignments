@@ -71,4 +71,3 @@ Enter number of columns: 6
 
 ---
 
-👉 Would you like me to also **add sample outputs for Question1 to Question5** in the README so your GitHub looks more professional?
